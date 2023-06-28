@@ -3,21 +3,39 @@ import React from 'react';
 function NavBar() {
   return (
     <>
-        <div className="navbar bg-neutral text-neutral-content">
-  <div className="flex-none">
-    <button className="btn btn-square btn-ghost">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-    </button>
-  </div>
-  <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </div>
-  <div className="flex-none">
-    <button className="btn btn-square btn-ghost">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
-    </button>
-  </div>
-</div>
+        <div className="flex flex-col w-full">
+            
+            <div className="flex flex-row">
+                <div className="basis-2/5    flex items-center">
+                    <div className='mr-2'>About</div>
+                    <div className=''>contact</div>
+                </div>
+
+                <div className="grid h-20 card rounded-box place-items-center ">
+                    <div className="flex items-center font-bold text-4xl text-green-500">퍼스널TEA</div>
+                </div>
+                
+                <div className="basis-1/6">
+                    <button className="btn-xs btn-outline basis-1/6">Join us</button>
+                    <button className="btn-xs btn-outline basis-1/6">Log In</button>
+                </div>
+            
+            </div>
+            
+
+
+            <hr />
+
+            <div className="grid h-10 my-3 card rounded-box place-items-center">
+                <div className="tabs">
+                    <a className="tab-lg tab-bordered mr-20">Tab 1</a>
+                    <a className="tab-lg tab-bordered tab-active">Tab 2</a>
+                </div>
+            </div>
+            
+            <hr />
+
+        </div>
     </>
   );
 }
