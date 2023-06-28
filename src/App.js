@@ -1,12 +1,15 @@
 import React from "react";
 import NavBar from './navBar/navBar';
+import Footer from "./footer/footer";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <NavBar />
-    </div>
-    );
+      <Footer />
+    </>
+
+  );
 }
 
 export default App;
