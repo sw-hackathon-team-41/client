@@ -14,7 +14,7 @@ export default function BoardMost({ value }) {
         const jsonData = await response.json();
         const obj = await jsonData.content;
         
-        console.log("데이터 요청 성공:", obj);
+        console.log("데이터 요청 성공(basic):", obj);
         setData(obj);
       } catch (error) {
         console.error("데이터 요청 중 오류:", error);
