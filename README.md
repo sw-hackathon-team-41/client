@@ -23,9 +23,7 @@
 | 이름   | 개인 깃허브                                     | 담당 역할 및 기능                                                                                                                                          |
 | ------ | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 고우라 | []()    | <img src="https://img.shields.io/badge/-Design-pink"> 팀장(기획), 디자인 |
-| 김동현 | [
-Dwisgolmog](https://github.com/
-Dwisgolmog) | <img src="https://img.shields.io/badge/-FE-brightgreen"> 프론트엔드                                                                                           |
+| 김동현 | [Dwisgolmog](https://github.com/Dwisgolmog) | <img src="https://img.shields.io/badge/-FE-brightgreen"> 프론트엔드                                                                                           |
 | 양성원 | [LulzCo](https://github.com/LulzCo)           | <img src="https://img.shields.io/badge/-FE-brightgreen"> 프론트엔드                |
 | 박신형 | [ShinHyeong](https://github.com/ShinHyeong)         | <img src="https://img.shields.io/badge/-BE-red"> SNS                                                          |
 | 황승수 | [rivercity310](https://github.com/rivercity310)         | <img src="https://img.shields.io/badge/-BE-red"> 배포
@@ -79,12 +77,12 @@ Dwisgolmog) | <img src="https://img.shields.io/badge/-FE-brightgreen"> 프론트
 
 ### 자신의 반려식물을 자랑하고 정보를 공유할 수 있는 SNS
 (gif 첨부)
-- 팔로우 신청/취소
-(gif 첨부)
+- 팔로우 신청/취소 
+<br/>(gif 첨부)
 - 토글 형식의 좋아요 
-(gif 첨부)
+<br/>(gif 첨부)
 - 인기 글 목록 
-(gif 첨부)
+<br/>(gif 첨부)
 - 내가 팔로우한 유저의 글 보기
 
 ### 반려식물에 대해 질의응답할 수 있는 커뮤니티
