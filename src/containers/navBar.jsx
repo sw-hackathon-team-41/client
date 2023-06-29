@@ -8,36 +8,27 @@ import {
 export default function NavBar() {
   return (
     <>
-        <div className="flex flex-col w-full">
-            
-            <div className="flex flex-row">
-                <div className="basis-2/5 flex items-center">
-                    <div className='mr-2'>About</div>
-                    <div className=''>contact</div>
-                </div>
-
-                <div className="grid h-20 card rounded-box place-items-center ">
-                    <div className="flex items-center font-bold text-4xl text-green-500">퍼스널TEA</div>
-                </div>
-                
-                <div className="basis-1/6">
-                    <button className="btn-xs btn-outline basis-1/6">Join us</button>
-                    <button className="btn-xs btn-outline basis-1/6">Log In</button>
-                </div>
-            
-            </div>
-        </div>            
-        <hr />
-        <div className="flex flex-row basis-2 justify-center h-20 my-3 card rounded-box place-items-center bg-white">
-            <NavMenu>
-                <NavLink to='/' activestyle="true" activeClassName='active'>홈</NavLink>
-                <NavLink to='/myfeed' actiestyle="false">나의 피드</NavLink>
-                <NavLink to='/textForm' actiestyle="false">글쓰기</NavLink>
-            </NavMenu>
-            {/* <button className="btn btn-active" title="Home">Home</button>
-            <button className="btn btn-active" title="My Feed">My Feed</button> */}
+    <div className='grid grid-cols-1 grid-rows-3'>
+        <div className="flex flex-row basis-2 justify-center w-full h-auto my-3 card rounded-box">
+            <p className="font-bold text-4xl text-green-500 absolute place-content-center place-items-center mt-4">퍼스널TEA</p>
         </div>
-        <hr />
+        <div className="flex-row w-full h-auto card place-content-end">
+            <button className="btn btn-sm">Join us</button>
+        <button className="btn btn-sm">Log In</button> 
+        </div>
+        <div>
+            <hr />
+            <div className="flex flex-row basis-2 justify-center h-auto w-full my-3 card rounded-box place-items-center bg-white">
+                <NavMenu>
+                    <NavLink to='/' activestyle="true" activeClassName='active'>HOME</NavLink>
+                    <NavLink to='/myfeed' actiestyle="false">MY FEED</NavLink>
+                    <NavLink to='/textform' actiestyle="false">WRITE</NavLink> 
+                    <NavLink to='/about' actiestyle="false">ABOUT</NavLink>
+                </NavMenu>
+            </div>
+            <hr />
+        </div>
+    </div>
     </>
   );
 }
