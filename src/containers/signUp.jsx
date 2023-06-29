@@ -38,6 +38,10 @@ function SignUp() {
                 body: JSON.stringify(data)
             });
 
+            <div className="alert alert-success">
+                <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <span>Your purchase has been confirmed!</span>
+            </div>
             const jsonData = await response.json();
             console.log("데이터 요청 성공:", jsonData);
             // 응답 데이터를 처리합니다.
@@ -47,7 +51,7 @@ function SignUp() {
         }
     };
     return (
-        <Container component="main" maxWidth="xs" style={{ marginTop: "8%" }}>
+        <Container component="main" maxWidth="xs" style={{ marginTop: "2%", marginBottom: "5%" }}>
             <form noValidate onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>

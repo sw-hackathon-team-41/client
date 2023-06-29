@@ -1,8 +1,10 @@
 import React from "react";
 import { useEffect,useState } from "react";
 import { Container, Grid, Typography, TextField, Button } from "@mui/material";
+import { withRouter } from "react-router-dom";
+
 //import signin 메서드
-const Login = () => {
+const Login = ({history}) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
   
@@ -34,6 +36,7 @@ const Login = () => {
         const jsonData = await response.json();
         console.log("데이터 요청 성공:", jsonData.userId);
         // 응답 데이터를 처리합니다.
+        history.push("/");
       } catch (error) {
         console.error("데이터 요청 중 오류:", error);
         // 에러를 처리합니다.
@@ -41,7 +44,7 @@ const Login = () => {
     };
 
   return (
-    <Container component="main" maxWidth="xs" style={{ marginTop: "8%" }}>
+    <Container component="main" maxWidth="xs" style={{ marginTop: "2%",marginBottom: "10%"}}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography component="h1" variant="h5">

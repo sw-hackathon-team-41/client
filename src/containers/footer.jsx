@@ -5,7 +5,7 @@ function Footer() {
         <>
             <footer className="footer p-3 bg-black text-neutral-content">
                 <div className="flex">
-                    <img src="/images/logo.png" alt="Logo" className="w-64 h-auto ml-10 mt-[-20px]" />
+                    <img src="/images/footerLogo.png" alt="Logo" className="w-64 h-auto ml-10 mt-[-20px]" />
                 </div>
                 <div>
                     <span className="footer-title mt-3">Follow</span>
@@ -14,7 +14,7 @@ function Footer() {
                         <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
                     </div>
                 </div>
-                <div>
+                <div className='ml-96'>
                     <span className="link link-hover mt-3">홈페이지 이용약관 | 개인정보처리방침</span>
                     <a className="">41조|대표:고우라|대표전화|</a>
                     <a className="mt-[-7px]">개인정보책임자:고우라</a>
