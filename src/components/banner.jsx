@@ -3,8 +3,8 @@ import BannerButton from "./bannerButton";
 
 export default function Banner() {
     const banners = [
-        {id: 1, image: "/images/test_banner.png", showButton: true},
-        {id: 2, image: "/images/test_banner2.png", showButton: false},
+        {id: 1, video: "/images/test_banner.mp4", showButton: true},
+        // {id: 2, video: "/images/test_banner2.png", showButton: false},
     ];
     
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,7 +12,7 @@ export default function Banner() {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentIndex((preIndex) => (preIndex + 1) % banners.length);
-        }, 2000);
+        }, 3000);
 
         return () => {
             clearInterval(timer);
@@ -20,14 +20,22 @@ export default function Banner() {
     }, [banners.length]);
     return (
         <>
-        <div className="grid gap-4 gird-cols-2 mt-10 overflow-x-auto mb-10">
+        <div className="grid gap-4 gird-cols-2 mt-1 overflow-x-auto mb-10 relative">
+            {banners[currentIndex].showButton && <BannerButton />}
             <div className="banner-container" >
-                <img src={banners[currentIndex].image} alt="이벤트 배너" className="banner-image object-contain w-full h-full" />
-            </div>
-            <div>
-                {banners[currentIndex].showButton && <BannerButton />}
+            {banners[currentIndex].video && (
+                    <video
+                        src={banners[currentIndex].video}
+                        alt="이벤트 동영상"
+                        className="banner-video object-contain w-auto h-auto"
+                        autoPlay
+                        muted
+                    />
+                )}
+                
             </div>
         </div>
+        
         </>
     )    
 }

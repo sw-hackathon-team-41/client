@@ -8,7 +8,7 @@ import {
 export default function NavBar() {
   return (
     <>
-        <div className="flex flex-col w-full bg-white">
+        <div className="flex flex-col w-full">
             
             <div className="flex flex-row">
                 <div className="basis-2/5 flex items-center">
@@ -27,7 +27,7 @@ export default function NavBar() {
             
             </div>
         </div>            
-        <hr className='bg-white'/>
+        <hr />
         <div className="flex flex-row basis-2 justify-center h-20 my-3 card rounded-box place-items-center bg-white">
             <NavMenu>
                 <NavLink to='/' activestyle="true" activeClassName='active'>홈</NavLink>
@@ -37,9 +37,7 @@ export default function NavBar() {
             {/* <button className="btn btn-active" title="Home">Home</button>
             <button className="btn btn-active" title="My Feed">My Feed</button> */}
         </div>
-        <hr className='bg-white'/>
-
-        
+        <hr />
     </>
   );
 }
