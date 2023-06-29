@@ -48,51 +48,40 @@ export default function TextForm() {
                 </div>
 
                 <hr className="border-black mt-4" />
-
-
-                <input type="file" className="my-2 mr-20 file-input file-input-bordered file-input-success w-full max-w-xs"/>
-
-
-                <ul className="menu menu-horizontal px-1 flex">
-                    <li>
-                        <details className="w-96 border border-gray-300 rounded-lg mr-4">
-                            <summary>
-                                게시판 선택
-                            </summary>
-                            <ul className="p-2 bg-base-100">
-                                <li><a>Link 1</a></li>
-                                <li><a>Link 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li>
-                    <details className="w-64 border border-gray-300 rounded-lg">
-                            <summary>
-                                허브 종류 선택
-                            </summary>
-                            <ul className="p-2 bg-base-100">
-                                <li><a>Link 1</a></li>
-                                <li><a>Link 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                </ul>
+                
+                <div className="w-full justify-center">
+                    <select className="select select-success my-3 mr-6 w-9/12">
+                        <option disabled selected>게시판 선택</option>
+                        <option>일상</option>
+                        <option>Q&A</option>
+                    </select>
+                    <select className="select select-success my-3 w-64">
+                        <option disabled selected>허브 종류 선택</option>
+                        <option>민트</option>
+                        <option>카모마일</option>
+                        <option>로즈마리</option>
+                        <option>라벤더</option>
+                        <option>기타</option>
+                    </select>
+                </div>
 
 
 
 
-
-                <div className="form-control w-full max-w-xs mt-10 border border-gray-300 rounded-lg">
+                <div className="form-control border border-gray-300 rounded-lg">
                     <input
                         type="text"
                         placeholder="제목 입력"
-                        className="input "
+                        className="input w-full"
                         value={title}
                         onChange={handleTitleChange}
                     />
                 </div>
 
-                <div className="form-control mt-10">
+
+                <input type="file" className="mt-4 file-input file-input-bordered file-input-success w-full max-w-xs" />
+
+                <div className="form-control mt-5">
                     <textarea
                         className="textarea h-96 w-full mb-4 border border-gray-300 rounded-lg"
                         placeholder="내용을 입력해주세요."
