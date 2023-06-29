@@ -22,9 +22,9 @@ export default function NavBar() {
             <div className="flex flex-row basis-2 justify-center h-auto w-full my-3 card rounded-box place-items-center bg-white">
                 <NavMenu>
                     <NavLink to='/' activestyle="true" activeClassName='active'>HOME</NavLink>
-                    <NavLink to='/myfeed' actiestyle="false">MY FEED</NavLink>
-                    <NavLink to='/textform' actiestyle="false">WRITE</NavLink> 
-                    <NavLink to='/about' actiestyle="false">ABOUT</NavLink>
+                    <NavLink to='/myfeed' activestyle="false">MY FEED</NavLink>
+                    <NavLink to='/textform' activestyle="false">WRITE</NavLink> 
+                    <NavLink to='/about' activestyle="false">ABOUT</NavLink>
                 </NavMenu>
             </div>
             <hr />

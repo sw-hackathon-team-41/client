@@ -71,8 +71,10 @@ export default function TextForm() {
                                 허브 종류 선택
                             </summary>
                             <ul className="p-2 bg-base-100">
-                                <li><a>Link 1</a></li>
-                                <li><a>Link 2</a></li>
+                                <li><a>MINT</a></li>
+                                <li><a>CHAMOMILE</a></li>
+                                <li><a>ROSEMARY</a></li>
+                                <li><a>LAVENDER</a></li>
                             </ul>
                         </details>
                     </li>

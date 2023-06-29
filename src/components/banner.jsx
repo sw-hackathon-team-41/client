@@ -21,7 +21,6 @@ export default function Banner() {
     return (
         <>
         <div className="grid gap-4 gird-cols-2 mt-1 overflow-x-auto mb-10 relative">
-            {banners[currentIndex].showButton && <BannerButton />}
             <div className="banner-container" >
             {banners[currentIndex].video && (
                     <video
@@ -32,8 +31,8 @@ export default function Banner() {
                         muted
                     />
                 )}
-                
             </div>
+            {banners[currentIndex].showButton && <BannerButton />}
         </div>
         
         </>
