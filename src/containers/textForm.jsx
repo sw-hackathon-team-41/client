@@ -40,12 +40,13 @@ export default function TextForm() {
         fetch("http://52.78.155.175/article", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
+                
             },
             body: formData,
         })
             .then((response) => response.json())
             .then((responseData) => {
+                console.log(formData);
                 console.log("Data sent successfully:", responseData);
             })
             .catch((error) => {
@@ -76,11 +77,10 @@ export default function TextForm() {
                     <select className="select select-success my-3 w-64" value={selectedHub}
                         onChange={handleHubChange}>
                         <option disabled selected>허브 종류 선택</option>
-                        <option>민트</option>
-                        <option>카모마일</option>
-                        <option>로즈마리</option>
-                        <option>라벤더</option>
-                        <option>기타</option>
+                        <option>MINT</option>
+                        <option>CHAMOMILE</option>
+                        <option>ROSEMARY</option>
+                        <option>LAVENDER</option>
                     </select>
                 </div>
 
