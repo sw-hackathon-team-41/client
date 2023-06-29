@@ -15,7 +15,6 @@ function App() {
           <Route path='/myfeed' Component={MyFeed} />
         </Routes>
       </Router>
-      {/* <Home /> */}
       <Footer />
     </div>
     );
