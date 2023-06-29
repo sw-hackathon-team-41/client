@@ -8,10 +8,10 @@ import {
 export default function NavBar() {
   return (
     <>
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full bg-white">
             
             <div className="flex flex-row">
-                <div className="basis-2/5    flex items-center">
+                <div className="basis-2/5 flex items-center">
                     <div className='mr-2'>About</div>
                     <div className=''>contact</div>
                 </div>
@@ -27,16 +27,17 @@ export default function NavBar() {
             
             </div>
         </div>            
-        <hr />
-        <div className="flex flex-row basis-2 justify-center h-20 my-3 card rounded-box place-items-center">
+        <hr className='bg-white'/>
+        <div className="flex flex-row basis-2 justify-center h-20 my-3 card rounded-box place-items-center bg-white">
             <NavMenu>
-                <NavLink to='/' activestyle="true" activeClassName='active'>Home</NavLink>
-                <NavLink to='/myfeed' actiestyle="false">My Feed</NavLink>
+                <NavLink to='/' activestyle="true" activeClassName='active'>홈</NavLink>
+                <NavLink to='/myfeed' actiestyle="false">나의 피드</NavLink>
+                <NavLink to='/textForm' actiestyle="false">글쓰기</NavLink>
             </NavMenu>
             {/* <button className="btn btn-active" title="Home">Home</button>
             <button className="btn btn-active" title="My Feed">My Feed</button> */}
         </div>
-        <hr />
+        <hr className='bg-white'/>
 
         
     </>

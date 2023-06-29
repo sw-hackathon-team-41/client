@@ -5,7 +5,7 @@ import Home from "./containers/home";
 import MyFeed from "./containers/myFeed";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import TextForm from "./components/textForm";
+import TextForm from "./containers/textForm";
 
 function App() {
   return (
@@ -15,11 +15,11 @@ function App() {
         <Routes>
           <Route path='/' Component={Home}></Route>
           <Route path='/myfeed' Component={MyFeed} />
+          <Route path='/textForm' Component={TextForm} /> 
         </Routes>
       </Router>
       {/* <Home /> */}
       <Footer />
-      <TextForm />
     </div>
     );
   }
