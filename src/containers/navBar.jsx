@@ -23,8 +23,6 @@ export default function NavBar() {
               <img src="images/logo.png" className='h-20 w-auto justify-center'></img>
             </div>
             <div className="flex-row w-full h-10 card place-content-end">
-              {/* <button className="btn btn-sm">Join us</button> */}
-              {/* <button className="btn btn-sm">Log In</button> */}
               {isLoggedIn ? (
                 <NavLink to='/' actiestyle="false" className="btn btn-sm mr-2" onClick={handleLogout}>
                   LOGOUT
