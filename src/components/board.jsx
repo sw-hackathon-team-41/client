@@ -8,14 +8,14 @@ export default function Board({ value }) {
         fetchData();
     }, []);
 
-    const id = 1; // 게시물 번호
-
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://52.78.155.175/article/${id}`);
+        const response = await fetch(`http://52.78.155.175/article/list`);
         const jsonData = await response.json();
-        console.log("데이터 요청 성공:", jsonData);
-        setData(jsonData);
+        const obj = await jsonData.content;
+        
+        console.log("데이터 요청 성공:", obj);
+        setData(obj);
       } catch (error) {
         console.error("데이터 요청 중 오류:", error);
       }
@@ -25,33 +25,14 @@ export default function Board({ value }) {
             <div className="grid gap-4 grid-cols-1 mb-16">
                 <p className="text-3xl font-bold">{value}</p>
                 <div className="flex flex-row gap-4 border-t border-black">
-                    <Card 
-                    image="/images/test_hub.png"
-                    title={data.title}
-                    content={data.content}
-                />
-                <Card
-                    image="/images/test_hub.png"
-                    title={data.content}
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                />
-                <Card
-                    image="/images/test_hub.png"
-                    title="Example Card"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                />
-                <Card
-                    image="/images/test_hub.png"
-                    title="Example Card"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                />
-                    {/* {data.map((item) => (
+                    {data.length > 0 && data.map((item) => (
                         <Card
+                            key={item.content.articleId} // 각 아이템의 고유한 키 값 필요
                             image="/images/test_hub.png"
-                            title={item.title}
+                            title={item.content.title}
                             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                         />
-                    ))} */}
+                    ))}
                 </div>
             </div>
         </>
