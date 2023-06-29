@@ -2,6 +2,9 @@ import React from "react";
 import Card from "./card";
 
 export default function Board({value}) {
+    function getData() {
+        return
+    }
     return (
         <>
         <div className="grid gap-4 grid-cols-1 mb-16">
