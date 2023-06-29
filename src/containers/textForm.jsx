@@ -4,6 +4,17 @@ import { BsPencilFill } from "react-icons/bs"
 export default function TextForm() {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
+    const [selectedBoard, setSelectedBoard] = useState("");
+    const [selectedHub, setSelectedHub] = useState("");
+    const [file, setFile] = useState(null);
+
+    const handleBoardChange = (event) => {
+        setSelectedBoard(event.target.value);
+    };
+      
+    const handleHubChange = (event) => {
+        setSelectedHub(event.target.value);
+    };
 
     const handleTitleChange = (event) => {
         setTitle(event.target.value);
@@ -13,19 +24,25 @@ export default function TextForm() {
         setContent(event.target.value);
     };
 
+    const handleFileChange = (event) => {
+        setFile(event.target.files[0]);
+      };
+
     const handleSubmit = () => {
-        const data = {
-            userId: 1, //유저 아이디 번호
-            title: title,
-            content: content,
-        };
+        const formData = new FormData();
+        formData.append("userId", 1);
+        formData.append("title", title);
+        formData.append("content", content);
+        formData.append("articleType", selectedBoard);
+        formData.append("herbType", selectedHub);
+        formData.append("file", file);
 
         fetch("http://52.78.155.175/article", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(data),
+            body: formData,
         })
             .then((response) => response.json())
             .then((responseData) => {
@@ -48,14 +65,16 @@ export default function TextForm() {
                 </div>
 
                 <hr className="border-black mt-4" />
-                
+
                 <div className="w-full justify-center">
-                    <select className="select select-success my-3 mr-6 w-9/12">
+                    <select className="select select-success my-3 mr-6 w-9/12" value={selectedBoard}
+                        onChange={handleBoardChange}>
                         <option disabled selected>게시판 선택</option>
-                        <option>일상</option>
-                        <option>Q&A</option>
+                        <option>NORMAL</option>
+                        <option>QNA</option>
                     </select>
-                    <select className="select select-success my-3 w-64">
+                    <select className="select select-success my-3 w-64" value={selectedHub}
+                        onChange={handleHubChange}>
                         <option disabled selected>허브 종류 선택</option>
                         <option>민트</option>
                         <option>카모마일</option>
@@ -79,7 +98,8 @@ export default function TextForm() {
                 </div>
 
 
-                <input type="file" className="mt-4 file-input file-input-bordered file-input-success w-full max-w-xs" />
+                <input type="file" className="mt-4 file-input file-input-bordered file-input-success w-full max-w-xs"
+                 onChange={handleFileChange}/>
 
                 <div className="form-control mt-5">
                     <textarea

@@ -7,8 +7,8 @@ export default function Home() {
     <>
     <Banner></Banner>
       <div className="mb-10 mx-40">
-        <Board value={"#오늘의 인기글"}></Board>
-        <Board value={"#이 식물 궁금해요!"}></Board>
+        <Board value={"#최근의 인기글!"}></Board>
+        <Board value={"#팔로잉 소식"}></Board>
       </div>
     </>
 
