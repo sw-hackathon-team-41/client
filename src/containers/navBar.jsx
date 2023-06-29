@@ -1,6 +1,12 @@
 import React from 'react';
 
-function NavBar() {
+export default function NavBar() {
+    const MyContext = React.createContext();
+
+    function handleClick(value) {
+        console.log(value);
+        MyContext.Provider({ value: value });
+      };
   return (
     <>
         <div className="flex flex-col w-full">
@@ -21,23 +27,15 @@ function NavBar() {
                 </div>
             
             </div>
-            
-
-
-            <hr />
-
-            <div className="grid h-10 my-3 card rounded-box place-items-center">
-                <div className="tabs">
-                    <a className="tab-lg tab-bordered mr-20">Tab 1</a>
-                    <a className="tab-lg tab-bordered tab-active">Tab 2</a>
-                </div>
-            </div>
-            
-            <hr />
-
+        </div>            
+        <hr />
+        <button  className="btn-xs" title="Home" onClick={() => handleClick("home")}></button>
+        <button  className="btn-xs" title="My Feed" onClick={() => handleClick("myfeed")}></button>
+        <div className="grid h-10 my-3 card rounded-box place-items-center">
         </div>
+        <hr />
+
+        
     </>
   );
 }
-
-export default NavBar;
