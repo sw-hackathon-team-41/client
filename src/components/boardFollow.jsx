@@ -10,7 +10,7 @@ export default function BoardQue({ value }) {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://52.78.155.175/article/list/`);
+        const response = await fetch(`http://52.78.155.175/article/list/${localStorage.getItem('userId')}`);
         const jsonData = await response.json();
         const obj = await jsonData.content;
         
