@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from './navBar/navBar';
-import Footer from "./footer/footer";
+import NavBar from './components/navBar';
+import Footer from "./components/footer";
 import Home from './pages/home'
 
 function App() {
