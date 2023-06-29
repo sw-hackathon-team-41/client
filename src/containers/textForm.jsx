@@ -87,6 +87,7 @@ export default function TextForm() {
 
 
 
+
                 <div className="form-control border border-gray-300 rounded-lg">
                     <input
                         type="text"
