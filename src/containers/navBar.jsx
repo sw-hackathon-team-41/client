@@ -1,18 +1,11 @@
-import React, {useContext} from 'react';
+import React from 'react';
+import {
+    NavLink,
+    NavMenu,
+    } from '../components/navElements';
 
-const NavbarContext = React.createContext();
 
 export default function NavBar() {
-  // Access the context values
-  const { activeItem, setActiveItem } = useContext(NavbarContext);
-
-  // Handler for updating the active item
-  const handleClick = (item) => {
-    setActiveItem(item);
-  };    
-    // const handleClick = (value) => {
-    //     MyContext.Provider({ value: value });
-    // }    
   return (
     <>
         <div className="flex flex-col w-full">
@@ -36,8 +29,12 @@ export default function NavBar() {
         </div>            
         <hr />
         <div className="flex flex-row basis-2 justify-center h-20 my-3 card rounded-box place-items-center">
-            <button className="btn btn-active" title="Home" onClick={() => handleClick("home")}>Home</button>
-            <button className="btn btn-active" title="My Feed" onClick={() => handleClick("myfeed")}>My Feed</button>
+            <NavMenu>
+                <NavLink to='/' activestyle="true" activeClassName='active'>Home</NavLink>
+                <NavLink to='/myfeed' actiestyle="false">My Feed</NavLink>
+            </NavMenu>
+            {/* <button className="btn btn-active" title="Home">Home</button>
+            <button className="btn btn-active" title="My Feed">My Feed</button> */}
         </div>
         <hr />
 

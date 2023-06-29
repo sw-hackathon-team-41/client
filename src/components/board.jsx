@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./card";
 
-
 export default function Board({ value }) {
     const [data, setData] = useState([]);
 
@@ -21,8 +20,6 @@ export default function Board({ value }) {
         console.error("데이터 요청 중 오류:", error);
       }
     };
-    
-
     return (
         <>
             <div className="grid gap-4 grid-cols-1 mb-16">
