@@ -5,6 +5,8 @@ import Home from "./containers/home";
 import MyFeed from "./containers/myFeed";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+import TextForm from "./components/textForm";
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,7 @@ function App() {
         </Routes>
       </Router>
       <Footer />
+      <TextForm />
     </div>
     );
   }
