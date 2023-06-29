@@ -70,13 +70,13 @@ export default function TextForm() {
                 <div className="w-full justify-center">
                     <select className="select select-success my-3 mr-6 w-9/12" value={selectedBoard}
                         onChange={handleBoardChange}>
-                        <option disabled selected>게시판 선택</option>
+                        <option value =""disabled selected>게시판 선택</option>
                         <option>NORMAL</option>
                         <option>QNA</option>
                     </select>
                     <select className="select select-success my-3 w-64" value={selectedHub}
                         onChange={handleHubChange}>
-                        <option disabled selected>허브 종류 선택</option>
+                        <option value ="" disabled selected>허브 종류 선택</option>
                         <option>MINT</option>
                         <option>CHAMOMILE</option>
                         <option>ROSEMARY</option>

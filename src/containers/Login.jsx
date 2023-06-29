@@ -1,10 +1,9 @@
 import React from "react";
 import { useEffect,useState } from "react";
 import { Container, Grid, Typography, TextField, Button } from "@mui/material";
-import { withRouter } from "react-router-dom";
 
 //import signin 메서드
-const Login = ({history}) => {
+const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
   
@@ -34,9 +33,8 @@ const Login = ({history}) => {
         });
         console.log(data);
         const jsonData = await response.json();
-        console.log("데이터 요청 성공:", jsonData.userId);
-        // 응답 데이터를 처리합니다.
-        history.push("/");
+        console.log("데이터 요청 성공:", jsonData);
+        
       } catch (error) {
         console.error("데이터 요청 중 오류:", error);
         // 에러를 처리합니다.
