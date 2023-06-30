@@ -9,7 +9,7 @@ export default function Card({ image, title, content , articleId}) {
                 <div className="card-body">
                     {image && (
                         <figure>
-                            <img src={image} alt="Card" className="border border-black rounded-xl" />
+                            <img src={image} alt="Card" className="border border-black rounded-xl" style={{ width: '200px', height: '200px' }} />
                         </figure>
                     )}
                     <div className="flex justify-center border border-black rounded-xl bg-black"><span className="card-title  text-ellipsis text-white">{title}</span></div>
