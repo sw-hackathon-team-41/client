@@ -3,8 +3,8 @@ import BannerButton from "./bannerButton";
 
 export default function Banner() {
     const banners = [
-        {id: 1, video: "/images/test_banner.mp4", showButton: true},
-        // {id: 2, video: "/images/test_banner2.png", showButton: false},
+        {id: 1, video: "/images/welcome.mp4", showButton: true},
+        {id: 2, video: "/images/weather/", showButton: false},
     ];
     
     const [currentIndex, setCurrentIndex] = useState(0);
