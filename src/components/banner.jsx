@@ -53,10 +53,6 @@ export default function Banner() {
                         muted
                     />
                 )}
-                <div className="banner-text absolute top-0 left-0 text-white p-4">
-                        <h2 className="text-2xl font-bold">Banner Text</h2>
-                        <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
                 
             </div>
             {banners[currentIndex].showButton && <BannerButton />}
