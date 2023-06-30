@@ -23,14 +23,15 @@ export default function Modal(articleId,image) {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://52.78.155.175/article/${articleId}`);
+        const response = await fetch(`http://52.78.155.175/article/1`);
         const jsonData = await response.json();
         const obj = await jsonData.content;
         
+        console.log(`modal data!!:${articleId}`);
         console.log("데이터 요청 성공(Modal):", obj);
         setData(obj);
       } catch (error) {
-        console.error("데이터 요청 중 오류:", error);
+        console.error("데이터 요청 중 오류 modal:", error);
       }
     };
 
@@ -48,7 +49,7 @@ export default function Modal(articleId,image) {
                     <h3 className="font-bold text-lg">제목:{data.title}</h3>
                     {image && (
                         <figure>
-                            <img src={image} alt="Card" className="border border-black rounded-xl" />
+                            <img src={image} className="border border-black rounded-xl" />
                         </figure>
                     )}
                     <p className="py-4">Press ESC key or click the button below to close</p>
