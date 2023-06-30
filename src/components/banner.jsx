@@ -7,9 +7,10 @@ export default function Banner() {
         {id: 2, video: "", showButton: false},
     ];
     
+    
     const [currentIndex, setCurrentIndex] = useState(0);
     const [data, setData] = useState([]); //날씨 정보를 담을 변수
-
+    
     const fetchData = async () => {
         try {
           const response = await fetch(`http://52.78.155.175/videoType`);
@@ -31,10 +32,14 @@ export default function Banner() {
         console.log("dfadsfasdfadsfasdfasdfas")
         console.log(data);
         banners[1].video = "/images/weather/" + data + ".mp4";
+
         return () => {
             clearInterval(timer);
         };
+        
     }, [banners.length]);
+    //날씨 정보 가져옴(2)
+
     return (
         <>
         <div className="grid gap-4 gird-cols-2 mt-1 overflow-x-auto mb-10 relative">
@@ -48,6 +53,11 @@ export default function Banner() {
                         muted
                     />
                 )}
+                <div className="banner-text absolute top-0 left-0 text-white p-4">
+                        <h2 className="text-2xl font-bold">Banner Text</h2>
+                        <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                
             </div>
             {banners[currentIndex].showButton && <BannerButton />}
         </div>
