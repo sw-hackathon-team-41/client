@@ -11,7 +11,7 @@ export default function Home() {
       <div className="mb-10 mx-40">
         <BoardMost value={"#최근의 인기글!"}></BoardMost>
         <BoardQue value={"#질문글"}></BoardQue>
-        <BoardFollow value={"#팔로잉의 글"}></BoardFollow>
+        {/* <BoardFollow value={"#팔로잉의 글"}></BoardFollow> */}
       </div>
     </>
 

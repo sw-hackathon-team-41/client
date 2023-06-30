@@ -14,7 +14,7 @@ export default function Card({ image, title, content , articleId}) {
                     )}
                     <div className="flex justify-center border border-black rounded-xl bg-black"><span className="card-title  text-ellipsis text-white">{title}</span></div>
                     <p className="card-content">{content}</p>
-                    <Modal articleId={articleId} image={image}/>
+                    {/* <Modal articleId={articleId} image={image}/> */}
                 </div>
             </div>
         </>
