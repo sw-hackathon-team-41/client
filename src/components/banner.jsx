@@ -29,8 +29,6 @@ export default function Banner() {
             setCurrentIndex((preIndex) => (preIndex + 1) % banners.length);
         }, 3000);
         fetchData();
-        console.log("dfadsfasdfadsfasdfasdfas")
-        console.log(data);
         banners[1].video = "/images/weather/" + data + ".mp4";
 
         return () => {

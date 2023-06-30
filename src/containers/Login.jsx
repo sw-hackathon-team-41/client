@@ -4,6 +4,7 @@ import { Container, Grid, Typography, TextField, Button } from "@mui/material";
 
 //import signin 메서드
 const Login = () => {
+    localStorage.removeItem("userId");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
   
@@ -31,12 +32,11 @@ const Login = () => {
           },
           body: JSON.stringify(data)
         });
-        console.log(data);
         const jsonData = await response.json();
-        console.log("데이터 요청 성공:", jsonData);
-        
         localStorage.setItem("userId", jsonData);
+        window.location.href = '/';
       } catch (error) {
+
         console.error("데이터 요청 중 오류:", error);
         // 에러를 처리합니다.
       }
