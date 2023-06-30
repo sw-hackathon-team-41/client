@@ -4,16 +4,33 @@ import BannerButton from "./bannerButton";
 export default function Banner() {
     const banners = [
         {id: 1, video: "/images/welcome.mp4", showButton: true},
-        {id: 2, video: "/images/weather/", showButton: false},
+        {id: 2, video: "", showButton: false},
     ];
     
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [data, setData] = useState([]); //날씨 정보를 담을 변수
+
+    const fetchData = async () => {
+        try {
+          const response = await fetch(`http://52.78.155.175/videoType`);
+          const jsonData = await response.json();
+          const obj = await jsonData.content;
+
+          console.log("데이터 요청 성공(basic):", obj);
+          setData(obj);
+        } catch (error) {
+          console.error("데이터 요청 중 오류:", error);
+        }
+      };
 
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentIndex((preIndex) => (preIndex + 1) % banners.length);
         }, 3000);
-
+        fetchData();
+        console.log("dfadsfasdfadsfasdfasdfas")
+        console.log(data);
+        banners[1].video = "/images/weather/" + data + ".mp4";
         return () => {
             clearInterval(timer);
         };
