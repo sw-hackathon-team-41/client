@@ -29,7 +29,7 @@ export default function BoardQue({ value }) {
                         <Card
                             key={item.content.articleId} // 각 아이템의 고유한 키 값 필요
                             image={item.thumbnail ? `data:image/png;base64, ${item.thumbnail}` : null}
-                            title={`제목:${item.title}`}
+                            title={`${item.title}`}
                             content={`내용:${item.content}`}
                             articleId={item.articleId}
                         />

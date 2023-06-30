@@ -59,9 +59,9 @@ export default function TextForm() {
             <div className="mb-10 mx-40">
                 <div className="text-2xl mt-10 flex items-center">
                     <span className="mr-4"><BsPencilFill /></span>글 쓰기
-                    <button className="ml-auto px-4 py-1 text-sm font-semibold rounded-lg border border-black hover:text-white hover:bg-black hover:border-transparent">
-                        임시등록</button>
-                    <button onClick={handleSubmit} className="ml-2 px-4 py-1 text-sm font-semibold rounded-lg border border-black hover:text-white hover:bg-black hover:border-transparent">
+                    {/* <button className="mr-2 px-4 py-1 text-sm font-semibold rounded-lg border border-black hover:text-white hover:bg-black hover:border-transparent">
+                        임시등록</button> */}
+                    <button onClick={handleSubmit} className="ml-auto px-4 py-1 text-sm font-semibold rounded-lg border border-black hover:text-white hover:bg-black hover:border-transparent">
                         최종등록</button>
                 </div>
 
