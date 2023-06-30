@@ -28,7 +28,8 @@ export default function MyFeed() {
     const fetchData = async () => {
       try {
         const response = await fetch(`http://52.78.155.175/user/info/${localStorage.getItem('userId')}`);
-        const jsonData = await response.json();
+        const jsonData = await response;
+        console.log(`jsonData!!:${jsonData.userInfo}`)
         const obj = await jsonData.content;
         
         console.log("데이터 요청 성공(myFeed):", obj);
