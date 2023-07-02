@@ -49,6 +49,10 @@ function SignUp() {
             // 에러를 처리합니다.
         }
     };
+
+    function temp() {
+        window.location.href= "/";
+    }
     return (
         <Container component="main" maxWidth="xs" style={{ marginTop: "2%", marginBottom: "5%" }}>
             <form noValidate onSubmit={handleSubmit}>
@@ -99,7 +103,7 @@ function SignUp() {
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Button type="submit" fullWidth variant="contained" color="primary">
+                        <Button type="submit" fullWidth variant="contained" color="primary" onClick={temp}>
                             가입
                         </Button>
                     </Grid>
