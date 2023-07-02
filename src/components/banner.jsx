@@ -4,7 +4,7 @@ import BannerButton from "./bannerButton";
 export default function Banner() {
     const banners = [
         {id: 1, video: "/images/welcome.mp4", showButton: true},
-        {id: 2, video: "/images/weather/", showButton: false},
+        // {id: 2, video: "/images/weather/", showButton: false},
     ];
     
     

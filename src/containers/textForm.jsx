@@ -48,6 +48,7 @@ export default function TextForm() {
             .then((responseData) => {
                 console.log(formData);
                 console.log("Data sent successfully:", responseData);
+                alert('게시물 작성 완료!');
             })
             .catch((error) => {
                 console.error("Error sending data:", error);

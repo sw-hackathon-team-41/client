@@ -36,6 +36,8 @@ const Login = () => {
         console.log("데이터 요청 성공:", jsonData);
         
         localStorage.setItem("userId", jsonData);
+        
+        alert('로그인 완료');
       } catch (error) {
         console.error("데이터 요청 중 오류:", error);
         // 에러를 처리합니다.
