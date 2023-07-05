@@ -3,7 +3,7 @@
 > 불가능한 것을 가능하게, 해커톤이 돌아왔다! <br/>
 > 
 ## 🪴 Introduce Project
-<img width="100%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/9f01f310-ab9c-40b8-aa96-eff77220663b"/>
+<img width="30%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/9f01f310-ab9c-40b8-aa96-eff77220663b"/>
 
 #### MZ세대 힐링을 돕는 반려식물 어플
 
