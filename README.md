@@ -1,9 +1,10 @@
 # 🍵TEAM TEA PARTY
-
 > SW중심대학 공동해커톤 2023 <br/>
 > 불가능한 것을 가능하게, 해커톤이 돌아왔다! <br/>
 > 
 ## 🪴 Introduce Project
+<img width="30%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/9f01f310-ab9c-40b8-aa96-eff77220663b"/>
+
 #### MZ세대 힐링을 돕는 반려식물 어플
 
 > **_기획 배경_**  
@@ -50,7 +51,7 @@
 #### BACKEND
 <div>
 <img  src="https://img.shields.io/badge/java 11-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white">
-<img src="https://img.shields.io/badge/Spring Boot 3.1.1-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+<img src="https://img.shields.io/badge/Spring Boot 3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
 <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white">
 <img src="https://img.shields.io/badge/PostgreSQL-4479A1?style=for-the-badge&logo=PostgreSQL&logoColor=white">
 <img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000.svg?&style=for-the-badge&logo=IntelliJ%20IDEA&logoColor=white">
@@ -64,31 +65,21 @@
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
 </div>
 
-### 🧩 아키텍처
-(이미지 첨부)
-
 ## 🪴 UI 및 작업 내역
 ### 로그인 및 회원가입
-(gif 첨부)
-
-### 유저 정보 변경
-(gif 첨부)
+<img width="80%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/470a4ccd-ed57-4b8d-802b-92592d7c9fb1"/>
 
 ### 날씨 공공데이터 API를 활용한 반려식물 케어
 (gif 첨부)
 
 ### 자신의 반려식물을 자랑하고 정보를 공유할 수 있는 SNS
-(gif 첨부)
-- 팔로우 신청/취소 <br/>
-(gif 첨부)
-- 토글 형식의 좋아요 <br/>
-(gif 첨부)
-- 인기 글 목록 <br/>
-(gif 첨부)
-- 내가 팔로우한 유저의 글 보기 <br/>
+- 인기 글 목록
+- 내가 팔로우한 유저의 글 보기
+- 팔로우 신청/취소
+- 토글 형식의 좋아요
 
 ### 반려식물에 대해 질의응답할 수 있는 커뮤니티
-(gif 첨부)
+<img width="80%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/6c522aa6-97b1-48b5-a4c4-45a118f5aef7"/>
 
 ###  맞춤형 허브티 추천 테스트
-(gif 첨부)
+<img width="80%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/0d6d1a50-6b1b-4f60-91cf-616792a2df5d"/>
