@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Container, Grid, Typography, TextField, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+
 //import signup 메소드;
 function SignUp() {
     const [email, setEmail] = useState("");
@@ -41,11 +42,17 @@ function SignUp() {
             const jsonData = await response.json();
             console.log("데이터 요청 성공:", jsonData);
             // 응답 데이터를 처리합니다.
+
+            alert("회원가입 완료");
         } catch (error) {
             console.error("데이터 요청 중 오류:", error);
             // 에러를 처리합니다.
         }
     };
+
+    function temp() {
+        window.location.href= "/";
+    }
     return (
         <Container component="main" maxWidth="xs" style={{ marginTop: "2%", marginBottom: "5%" }}>
             <form noValidate onSubmit={handleSubmit}>
@@ -96,7 +103,7 @@ function SignUp() {
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Button type="submit" fullWidth variant="contained" color="primary">
+                        <Button type="submit" fullWidth variant="contained" color="primary" onClick={temp}>
                             가입
                         </Button>
                     </Grid>

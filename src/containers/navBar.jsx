@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 
 import {
@@ -14,6 +14,22 @@ export default function NavBar() {
       // 로그아웃 처리 로직 작성
       setIsLoggedIn(false);
     };
+    
+    useEffect(() => {
+        if (localStorage.getItem("userId")) {
+            document.getElementById("btn-signup").classList.add("hidden");
+            document.getElementById("btn-login").classList.add("hidden");
+            document.getElementById("btn-logout").classList.remove("hidden");
+        }
+    }, []);
+
+    function logout() {
+        if (localStorage.getItem("userId")) {
+            localStorage.removeItem("userId");
+            localStorage.removeItem("pw");
+        }
+        window.location.href ="/";
+    }
   
 
     return (
@@ -23,20 +39,19 @@ export default function NavBar() {
               <img src="images/logo.png" className='h-20 w-auto justify-center'></img>
             </div>
             <div className="flex-row w-full h-10 card place-content-end">
-              {/* <button className="btn btn-sm">Join us</button> */}
-              {/* <button className="btn btn-sm">Log In</button> */}
               {isLoggedIn ? (
                 <NavLink to='/' actiestyle="false" className="btn btn-sm mr-2" onClick={handleLogout}>
                   LOGOUT
                 </NavLink>
               ) : (
                 <>
-                  <NavLink to='/signup' actiestyle="false" className="btn btn-sm mr-2">
+                  <NavLink to='/signup' actiestyle="false" className="btn btn-sm mr-2" id="btn-signup">
                     SIGNUP
                   </NavLink>
-                  <NavLink to='/login' actiestyle="false" className="btn btn-sm">
+                  <NavLink to='/login' actiestyle="false" className="btn btn-sm" id="btn-login">
                     LOGIN
                   </NavLink>
+                  <button onClick={logout} className='btn btn-sm hidden' id='btn-logout'>LOGOUT</button>
                 </>
               )}
             </div>
