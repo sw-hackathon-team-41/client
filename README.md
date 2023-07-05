@@ -71,10 +71,12 @@
 
 ### 날씨 공공데이터 API를 활용한 반려식물 케어
 (gif 첨부)
+
 - https://www.weatherapi.com/ 사용
 
 ###  맞춤형 허브티 추천 테스트
 <img width="80%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/0d6d1a50-6b1b-4f60-91cf-616792a2df5d"/>
+
 - 4개의 분류 중 점수가 가장 높은 하나의 분류를 결과값으로 넘겨주는 원리
 
 ### 반려식물에 대해 질의응답할 수 있는 커뮤니티
