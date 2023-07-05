@@ -26,7 +26,7 @@
 | ------ | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 고우라 | []()    | <img src="https://img.shields.io/badge/-Design-blue"> 팀장(기획), 디자인 |
 | 김동현 | [Dwisgolmog](https://github.com/Dwisgolmog) | <img src="https://img.shields.io/badge/-FE-brightgreen"> 프론트엔드                                                                                           |
-| 양성원 | [LulzCo](https://github.com/LulzCo)           | <img src="https://img.shields.io/badge/-FE-brightgreen"> 프론트엔드               |
+| 양성원 | [Diamad-devlpr](https://github.com/Diamad-devlpr)           | <img src="https://img.shields.io/badge/-FE-brightgreen"> 프론트엔드               |
 | 박신형 | [ShinHyeong](https://github.com/ShinHyeong)         | <img src="https://img.shields.io/badge/-BE-red"> 백엔드                                                          |
 | 황승수 | [rivercity310](https://github.com/rivercity310)         | <img src="https://img.shields.io/badge/-BE-red"> 백엔드
 
