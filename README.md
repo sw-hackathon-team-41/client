@@ -1,9 +1,10 @@
 # 🍵TEAM TEA PARTY
-
 > SW중심대학 공동해커톤 2023 <br/>
 > 불가능한 것을 가능하게, 해커톤이 돌아왔다! <br/>
 > 
 ## 🪴 Introduce Project
+<img width="100%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/9f01f310-ab9c-40b8-aa96-eff77220663b"/>
+
 #### MZ세대 힐링을 돕는 반려식물 어플
 
 > **_기획 배경_**  
@@ -66,7 +67,7 @@
 
 ## 🪴 UI 및 작업 내역
 ### 로그인 및 회원가입
-<img width="100%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/470a4ccd-ed57-4b8d-802b-92592d7c9fb1"/>
+<img width="80%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/470a4ccd-ed57-4b8d-802b-92592d7c9fb1"/>
 
 ### 날씨 공공데이터 API를 활용한 반려식물 케어
 (gif 첨부)
@@ -78,7 +79,7 @@
 - 토글 형식의 좋아요
 
 ### 반려식물에 대해 질의응답할 수 있는 커뮤니티
-<img width="100%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/6c522aa6-97b1-48b5-a4c4-45a118f5aef7"/>
+<img width="80%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/6c522aa6-97b1-48b5-a4c4-45a118f5aef7"/>
 
 ###  맞춤형 허브티 추천 테스트
-<img width="100%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/0d6d1a50-6b1b-4f60-91cf-616792a2df5d"/>
+<img width="80%" src="https://github.com/sw-hackathon-team-41/client/assets/73327950/0d6d1a50-6b1b-4f60-91cf-616792a2df5d"/>
